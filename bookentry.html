@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Input Page</title>
+    <link rel="stylesheet" href="styles.css" />
+
+  </head>
+  <body>
+    <div class="container">
+      <form
+        class="sign-in-form"
+        action="process_book.php"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <h2>Book Input Form</h2>
+
+
+        <div class="form-group">
+          <div class="book-cover">
+            <label for="displayed-image"></label>
+            <img
+              id="displayed-image"
+              src="#"
+              alt="Selected Image"
+              style="max-width: 100%; display: none"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" required />
+          </div>
+
+          <div class="form-group">
+            <label for="author">Author</label>
+            <input type="text" id="author" name="author" required />
+          </div>
+
+          <div class="form-group">
+            <label for="genre">Genre</label>
+            <input type="text" id="genre" name="genre" required />
+          </div>
+
+          <div class="form-group">
+            <label for="series">Series</label>
+            <input type="radio" id="series-y" name="series" value="Y" /> Yes
+            <input type="radio" id="series-n" name="series" value="N" /> No
+          </div>
+
+          <div class="form-group">
+            <div class="rate">
+              <input type="radio" id="star5" name="rate" value="5" />
+              <label for="star5" title="text">5 stars</label>
+              <input type="radio" id="star4" name="rate" value="4" />
+              <label for="star4" title="text">4 stars</label>
+              <input type="radio" id="star3" name="rate" value="3" />
+              <label for="star3" title="text">3 stars</label>
+              <input type="radio" id="star2" name="rate" value="2" />
+              <label for="star2" title="text">2 stars</label>
+              <input type="radio" id="star1" name="rate" value="1" />
+              <label for="star1" title="text">1 star</label>
+            </div>
+          </div>
+    
+        
+
+        <div class="form-group">
+          <button class="button" type="submit">Submit</button>
+        </div>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
