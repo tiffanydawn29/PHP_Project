@@ -107,7 +107,7 @@ form {
     color:#ccc;
 }
 .rate:not(:checked) > label:before {
-    content: '★ ';
+    content: '\2605 ';
 }
 .rate > input:checked ~ label {
     color: #ffc700;    
