@@ -5,10 +5,15 @@ body {
     padding: 0;
 }
 
+header ul {
+    display: flex;
+    flex-direction: row;
+}
+
 ul {
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -19,16 +24,32 @@ ul li a {
     display: flex;
     flex-direction: row;
     justify-content: right;
-
-    color: white;
+    color: #1f818e;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 ul li a:hover {
-    background-color: #0077b3;
+    color: #14555d;
 }
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.login {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+/* .login_links {
+    display: flex;
+    justify-content: right;
+} */
 
 h1 {
     text-align: center;
