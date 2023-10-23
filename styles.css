@@ -5,6 +5,31 @@ body {
     padding: 0;
 }
 
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+}
+
+ul li a {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    background-color: #0077b3;
+}
+
 h1 {
     text-align: center;
     background-color: #1f818e;
