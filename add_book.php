@@ -5,8 +5,23 @@
     <link rel="stylesheet" type="text/css" href="styles.css">
 
 </head>
-<body>
 
+<header>
+    <nav>
+      <ul>
+        <div class="nav"> 
+        <li><a href="index.php">Home</a></li>
+        <li><a href="add_book.php">Add Book</a></li>
+    </div>
+        <div class="login">
+        <li><a href="signin.php">Login</a></li>
+        <li><a href="signup.php" >Register</a></li>
+        </div>
+      </ul>
+    </nav>
+  </header>
+
+<body>
 <h1>Add a new Bookish Entry</h1>
     <form action="process_book.php" method="post">
         Author:<br> <input type="text" name="author" required><br>
