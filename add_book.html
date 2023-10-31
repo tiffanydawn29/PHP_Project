@@ -29,7 +29,8 @@
       <div id="imagePreview"></div><br>
         Author:<br> <input type="text" name="author" required><br>
         Title:<br> <input type="text" name="title" required><br>
-        Genre:<br> <input type="text" name="genre" required><br>
+        Genre:<br> <input type="text" name="genre" id="genre" list="genre-suggestions" required>
+        <datalist id="genre-suggestions"></datalist><br>
         Series:<br> 
         <select name="series" required>
             <option value="Yes">Yes</option>
@@ -53,5 +54,59 @@
         </div>
     </form>
     <a href="index.html">Back to homepage</a>
+    <script>
+      const predefinedGenres = [
+          "Science Fiction",
+          "Fantasy",
+          "Mystery",
+          "Romance",
+          "Thriller",
+          "Non-fiction",
+          "Biography",
+          "Historical",
+          "Horror",
+          // Add more genres as needed
+      ];
+  
+      const genreInput = document.getElementById('genre');
+      const genreSuggestions = document.getElementById('genre-suggestions');
+  
+      genreInput.addEventListener('input', () => {
+          const inputText = genreInput.value.toLowerCase();
+          const filteredGenres = predefinedGenres.filter(genre =>
+              genre.toLowerCase().includes(inputText)
+          );
+  
+          genreSuggestions.innerHTML = '';
+  
+          filteredGenres.forEach(genre => {
+              const option = document.createElement('option');
+              option.value = genre;
+              genreSuggestions.appendChild(option);
+          });
+      });
+  
+      const coverImageInput = document.getElementById('coverImage');
+      const imagePreview = document.getElementById('imagePreview');
+  
+      coverImageInput.addEventListener('change', () => {
+          const file = coverImageInput.files[0];
+          if (file) {
+              const reader = new FileReader();
+  
+              reader.onload = (e) => {
+                  const preview = document.createElement('img');
+                  preview.src = e.target.result;
+                  preview.alt = 'Book Cover Preview';
+                  imagePreview.innerHTML = ''; // Clear previous preview
+                  imagePreview.appendChild(preview);
+              };
+  
+              reader.readAsDataURL(file);
+          } else {
+              imagePreview.innerHTML = ''; // Clear the preview if no file is selected
+          }
+      });
+  </script>
 </body>
 </html>
