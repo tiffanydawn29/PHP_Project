@@ -9,3 +9,7 @@ Sure, here's an example of a fun feature you can add to your code: a random book
 
 This feature didn't implement well and ultimately wasn't functional.  
 
+Asked AI for a different feature:  
+Response:
+ChatGPT
+'To enhance your existing code with a different feature, let's add an auto-suggestion feature for the "Genre" input field. This will help users by providing suggestions as they type, making it easier to select the appropriate genre for the book they are adding.'  
