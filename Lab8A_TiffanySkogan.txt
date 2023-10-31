@@ -1,1 +1,22 @@
 Lab 8A: AI Assisted Critique of Milestone 2 and Feature Implementation  
+
+Asked AI to look at a page code and then asked it:    
+'ME  
+Could you add a fun feature to the previous code  
+
+ChatGPT  
+Sure, here's an example of a fun feature you can add to your code: a random book cover image generator. This feature will display a random book cover image each time the user loads the page. You can use placeholder images for this purpose.'    
+
+This feature didn't implement well and ultimately wasn't functional.  
+
+Asked AI for a different feature:  
+Response:  
+ChatGPT  
+'To enhance your existing code with a different feature, let's add an auto-suggestion feature for the "Genre" input field. This will help users by providing suggestions as they type, making it easier to select the appropriate genre for the book they are adding.'  
+
+This feature works really well and has been implemented on the new AI_feature_page.  
+
+Asked AI for an additional feature:   
+Response:  
+ChatGPT  
+'Certainly! To add a fun addition to your existing code block, you can implement a "Book Cover Preview" feature. This feature allows users to upload or select a book cover image, and a preview of the selected image is displayed in real-time.' 
