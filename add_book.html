@@ -24,6 +24,9 @@
 <body>
 <h1>Add a new Bookish Entry</h1>
     <form action="process_book.php" method="post">
+      <label for="coverImage">Book Cover Image:</label>
+      <input type="file" id="coverImage" name="coverImage" accept="image/*">
+      <div id="imagePreview"></div><br>
         Author:<br> <input type="text" name="author" required><br>
         Title:<br> <input type="text" name="title" required><br>
         Genre:<br> <input type="text" name="genre" required><br>
