@@ -19,4 +19,12 @@ This feature works really well and has been implemented on the new AI_feature_pa
 Asked AI for an additional feature:   
 Response:  
 ChatGPT  
-'Certainly! To add a fun addition to your existing code block, you can implement a "Book Cover Preview" feature. This feature allows users to upload or select a book cover image, and a preview of the selected image is displayed in real-time.' 
+'Certainly! To add a fun addition to your existing code block, you can implement a "Book Cover Preview" feature. This feature allows users to upload or select a book cover image, and a preview of the selected image is displayed in real-time.'   
+
+This feature was also successful and is on the test page.  
+
+Both of these features will be implmented into the app to add some addition functionality.  
+
+Both features have been added to the original file for the project.  
+
+
