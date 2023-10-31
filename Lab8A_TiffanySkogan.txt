@@ -13,3 +13,7 @@ Asked AI for a different feature:
 Response:
 ChatGPT
 'To enhance your existing code with a different feature, let's add an auto-suggestion feature for the "Genre" input field. This will help users by providing suggestions as they type, making it easier to select the appropriate genre for the book they are adding.'  
+
+This feature works really well and has been implemented on the new AI_feature_page.  
+
+
