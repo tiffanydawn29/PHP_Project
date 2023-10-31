@@ -27,4 +27,5 @@ Both of these features will be implmented into the app to add some addition func
 
 Both features have been added to the original file for the project.  
 
-
+Self-Evaluation Rubric:  
+3: Submission meets expectations of doing the work as requested, and is complete and accurate  
