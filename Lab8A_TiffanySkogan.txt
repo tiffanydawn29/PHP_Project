@@ -1,1 +1,8 @@
 Lab 8A: AI Assisted Critique of Milestone 2 and Feature Implementation  
+
+Asked AI to look at a page code and then asked it:    
+ME  
+Could you add a fun feature to the previous code  
+
+ChatGPT  
+Sure, here's an example of a fun feature you can add to your code: a random book cover image generator. This feature will display a random book cover image each time the user loads the page. You can use placeholder images for this purpose.  
