@@ -11,8 +11,12 @@
         <form class="sign-in-form" action="process_signin.php" method="post">
             <h2>Sign In</h2>
             <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="text" id="email" name="email" required>
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
