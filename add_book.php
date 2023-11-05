@@ -10,12 +10,12 @@
     <nav>
       <ul>
         <div class="nav"> 
-        <li><a href="index.html">Home</a></li>
-        <li><a href="add_book.html">Add Book</a></li>
+        <li><a href="index.php">Home</a></li>
+        <li><a href="add_book.php">Add Book</a></li>
     </div>
         <div class="login">
-        <li><a href="signin.html">Login</a></li>
-        <li><a href="signup.html" >Register</a></li>
+        <li><a href="signin.php">Login</a></li>
+        <li><a href="signup.php" >Register</a></li>
         </div>
       </ul>
     </nav>
@@ -53,7 +53,7 @@
             <br> <input type="submit" value="Add Book">
         </div>
     </form>
-    <a href="index.html">Back to homepage</a>
+    <a href="index.php">Back to homepage</a>
     <script>
       const predefinedGenres = [
           "Science Fiction",

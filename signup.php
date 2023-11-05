@@ -23,7 +23,7 @@
                 <input type="password" id="password" name="password" required>
             </div>
             <button type="submit">Sign Up</button>
-            <p>Already have an account? <a href="index.html">Sign in here</a></p>
+            <p>Already have an account? <a href="index.php">Sign in here</a></p>
         </form>
     </div>
 </body>
