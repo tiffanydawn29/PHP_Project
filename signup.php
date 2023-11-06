@@ -8,26 +8,22 @@
 </head>
 <body>
     <div class="container">
-        <form class="sign-up-form" action="process_signup.php" method="post">
+        <form class="sign-up-form" action="includes/formhandler.php" method="post">
             <h2>Sign Up</h2>
             <div class="form-group">
-                <label for="full-name">Full Name</label>
-                <input type="text" id="full-name" name="full-name" required>
-            </div>
-            <div class="form-group">
-            <div class="form-group">
-                <label for="username">Username</label>
-                <input type="text" id="email" name="email" required>
-            </div>
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <label for="full-name">Username</label>
+                <input type="text" name="username" placeholder="Username">
             </div>
             <div class="form-group">
                 <label for="password">Password</label>
-                <input type="password" id="password" name="password" required>
+                <input type="password" name="pwd" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" name="email" placeholder="E-Mail">
             </div>
             <button type="submit">Sign Up</button>
-            <p>Already have an account? <a href="index.php">Sign in here</a></p>
+            <p>Already have an account? <a href="index.html">Sign in here</a></p>
         </form>
     </div>
 </body>
