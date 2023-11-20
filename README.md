@@ -22,3 +22,27 @@ It's functionality will keep track of all books read and then gives a place to e
 
 - Implement the rest of the database code within the next 2 weeks  
 
+## Week 11 Addition from Assignment 8
+
+- **Added Deployment Branch:**
+  - Created a deployment branch for the assignment.
+
+- **Folder Setup:**
+  - Created a folder named `dgl123` on AWS.
+
+- **Project Files:**
+  - Added assignment files to the `dgl123` folder on AWS.
+
+- **Database Setup:**
+  - Downloaded the database from phpMyAdmin.
+  - Added the database to AWS, using the 'm3' suffix.
+
+- **GitHub Integration:**
+  - Created a file named `dgl123`.
+  - Moved the assignment files to this file.
+  - Reconnected GitHub Desktop to ensure synchronization.
+
+- **Testing:**
+  - Tested the site by accessing the AWS link.
+
+These steps were taken as part of the Week 11 addition to Assignment 8.
