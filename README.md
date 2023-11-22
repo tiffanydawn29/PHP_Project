@@ -46,3 +46,18 @@ It's functionality will keep track of all books read and then gives a place to e
   - Tested the site by accessing the AWS link.
 
 These steps were taken as part of the Week 11 addition to Assignment 8.
+
+## Week 11 Addition from Assignment 8
+
+- Added the deployment branch
+- Created `dgl123` folder
+- Added project files to AWS folder `dgl123`
+- Downloaded database from phpMyAdmin
+- Added database to AWS using the `m3` suffix
+- Created a file called `dgl123`, moved the project over, and reconnected GitHub Desktop
+- Tested the site from the AWS link
+
+**Self-evaluation:** 6.8/8
+
+**Repo link:** [https://tskogan.imgd.ca/dgl123/dgl123.tiffanyphpproject.imgd.ca/1c/](https://tskogan.imgd.ca/dgl123/dgl123.tiffanyphpproject.imgd.ca/1c/)
+
