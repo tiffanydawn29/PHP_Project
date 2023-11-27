@@ -33,5 +33,12 @@
     // Display success message
         echo "Book added successfully!";
 
+    // Redirect to the book entry page after a delay
+        header("refresh:2;url=index.php");
+        exit(); 
+        // Make sure to exit after sending the header
+        } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+}
 
 ?>
