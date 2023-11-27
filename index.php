@@ -42,6 +42,23 @@
       // Fetch recent book entries
       $stmt = $conn->query("SELECT * FROM bookentry ORDER BY created_at DESC LIMIT 5"); 
 
+
+      // Display book entries
+      while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+      echo "<div>";
+      echo "<h3>{$row['title']}</h3>";
+      echo "<p>Author: {$row['author']}</p>";
+      echo "<p>Genre: {$row['genre']}</p>";
+      echo "<p>Series: {$row['series']}</p>";
+      echo "</div>";
+      }
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+        } finally {
+            // Close the database connection
+            $conn = null;
+        }
+    
     ?>
 
     <p>Add Book Entry PHP code here</p>
