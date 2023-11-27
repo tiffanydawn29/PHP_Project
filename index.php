@@ -78,11 +78,15 @@ echo "After breakpoint";
         }
 
     } catch (PDOException $e) {
-        echo "Error: " . $e->getMessage();
-    } finally {
-        // Close the database connection
-        $conn = null;
-    }
+      // Log the error
+      error_log("Database Connection Error: " . $e->getMessage());
+  
+      // Display a user-friendly error message
+      echo "An error occurred. Please try again later.";
+  } finally {
+      // Close the database connection
+      $conn = null;
+  }
     ?>
 
     <!-- <p>Add Book Entry PHP code here</p> -->
