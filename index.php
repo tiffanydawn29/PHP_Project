@@ -15,9 +15,10 @@ ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/PHP_project.log');
 
 // Debugging tricky section
-echo "Before breakpoint";
-exit(); // Manual breakpoint
-echo "After breakpoint";
+// echo "Before breakpoint";
+// exit(); 
+// Manual breakpoint
+// echo "After breakpoint";
 
 // Comment out the breakpoint code
 // // exit();
