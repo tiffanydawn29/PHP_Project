@@ -12,4 +12,10 @@
         // Set the PDO error mode to exception
         $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
+            // Get form data from add_book page
+        $author = $_POST['author'];
+        $title = $_POST['title'];
+        $genre = $_POST['genre'];
+        $series = $_POST['series'];
+
 ?>
