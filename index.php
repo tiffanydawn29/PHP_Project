@@ -1,3 +1,9 @@
+<?php
+// Set up custom error log
+ini_set('log_errors', 1);
+ini_set('error_log', __DIR__ . '/PHP_project.log');
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -50,7 +56,7 @@
             echo "<p>Series: {$row['series']}</p>";
             echo "</div>";
         }
-        
+
     } catch (PDOException $e) {
         echo "Error: " . $e->getMessage();
     } finally {
