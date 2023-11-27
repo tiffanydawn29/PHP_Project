@@ -39,6 +39,9 @@
        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
 
+      // Fetch recent book entries
+      $stmt = $conn->query("SELECT * FROM bookentry ORDER BY created_at DESC LIMIT 5"); 
+
     ?>
 
     <p>Add Book Entry PHP code here</p>
