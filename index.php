@@ -61,6 +61,6 @@
     
     ?>
 
-    <p>Add Book Entry PHP code here</p>
+    <!-- <p>Add Book Entry PHP code here</p> -->
   </body>
 </html>
