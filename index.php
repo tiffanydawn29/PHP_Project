@@ -26,39 +26,37 @@
 
     <?php
     // Database connection details
-    $servername = "mysql:host=localhost;dbname=myphpproject";
+    $servername = "localhost";
     $username = "root";
     $password = "root";
     $dbname = "myphpproject";
 
     try {
-      // Create a PDO connection
-      $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+        // Create a PDO connection
+        $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 
-      // Set the PDO error mode to exception
-       $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        // Set the PDO error mode to exception
+        $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
+        // Fetch recent book entries
+        $stmt = $conn->query("SELECT * FROM bookentry ORDER BY created_at DESC LIMIT 5"); // Assuming you have a 'created_at' column
 
-      // Fetch recent book entries
-      $stmt = $conn->query("SELECT * FROM bookentry ORDER BY created_at DESC LIMIT 5"); 
-
-
-      // Display book entries
-      while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-      echo "<div>";
-      echo "<h3>{$row['title']}</h3>";
-      echo "<p>Author: {$row['author']}</p>";
-      echo "<p>Genre: {$row['genre']}</p>";
-      echo "<p>Series: {$row['series']}</p>";
-      echo "</div>";
-      }
-        } catch (PDOException $e) {
-            echo "Error: " . $e->getMessage();
-        } finally {
-            // Close the database connection
-            $conn = null;
+        // Display book entries
+        while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+            echo "<div>";
+            echo "<h3>{$row['title']}</h3>";
+            echo "<p>Author: {$row['author']}</p>";
+            echo "<p>Genre: {$row['genre']}</p>";
+            echo "<p>Series: {$row['series']}</p>";
+            echo "</div>";
         }
-    
+        
+    } catch (PDOException $e) {
+        echo "Error: " . $e->getMessage();
+    } finally {
+        // Close the database connection
+        $conn = null;
+    }
     ?>
 
     <!-- <p>Add Book Entry PHP code here</p> -->
