@@ -18,4 +18,14 @@
         $genre = $_POST['genre'];
         $series = $_POST['series'];
 
+    // Prepare and execute SQL query
+        $stmt = $conn->prepare("INSERT INTO bookentry (author, title, genre, series) VALUES (?, ?, ?, ?)");
+        $stmt->bindParam(1, $author);
+        $stmt->bindParam(2, $title);
+        $stmt->bindParam(3, $genre);
+        $stmt->bindParam(4, $series);
+
+        $stmt->execute();
+
+
 ?>
