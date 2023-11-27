@@ -1,4 +1,15 @@
 <?php
+
+// Test environment
+error_reporting(E_ALL & ~E_NOTICE);
+ini_set('display_errors', 1);
+ini_set('log_errors', 0);
+
+// Production environment
+// error_reporting(E_ALL & ~E_NOTICE);
+// ini_set('display_errors', 0);
+// ini_set('log_errors', 1);
+
 // Set up custom error log
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/PHP_project.log');
