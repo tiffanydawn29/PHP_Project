@@ -24,6 +24,14 @@
 
     <h2>Recent Book Entries:</h2>
 
+    <?php
+    // Database connection details
+    $servername = "mysql:host=localhost";
+    $username = "root";
+    $password = "root";
+    $dbname = "myphpproject";
+    ?>
+
     <p>Add Book Entry PHP code here</p>
   </body>
 </html>
