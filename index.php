@@ -53,6 +53,7 @@ ini_set('error_log', __DIR__ . '/PHP_project.log');
 
     <?php
 
+     // Added a project root variable
     $proj_root = "/dgl123/PHP_project/";
 
     // Database connection details
