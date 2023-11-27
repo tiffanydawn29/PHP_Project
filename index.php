@@ -52,6 +52,9 @@ ini_set('error_log', __DIR__ . '/PHP_project.log');
     <h2>Recent Book Entries:</h2>
 
     <?php
+
+    $proj_root = "/dgl123/PHP_project/";
+
     // Database connection details
     $servername = "localhost";
     $username = "root";
