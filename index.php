@@ -13,6 +13,15 @@ ini_set('log_errors', 0);
 // Set up custom error log
 ini_set('log_errors', 1);
 ini_set('error_log', __DIR__ . '/PHP_project.log');
+
+// Debugging tricky section
+echo "Before breakpoint";
+exit(); // Manual breakpoint
+echo "After breakpoint";
+
+// Comment out the breakpoint code
+// // exit();
+
 ?>
 
 <!DOCTYPE html>
